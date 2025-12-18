@@ -46,4 +46,4 @@ define ell- = e- mu-
 generate p p > ell+ ell- [QCD]
 add process p p > ell+ ell- j [QCD]
 add process p p > ell+ ell- j j [QCD]
-output pp_z_012_jets_NLO_5F_FxFx_TuneCP5_pythia8
+output pp_z_012_jets_NLO_5F_FxFx_TuneCP5_pythia8_0

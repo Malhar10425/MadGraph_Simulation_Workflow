@@ -1,0 +1,11 @@
+set max_weight_ps_point 400
+set Nevents_for_max_weight 250
+# specify the decay for the final state particles
+define ell+ = e+ mu+
+define ell- = e- mu-
+
+decay w+ > ell+ vl
+decay w- > ell- vl~
+decay z > ell+ ell-
+# running the actual code
+launch
