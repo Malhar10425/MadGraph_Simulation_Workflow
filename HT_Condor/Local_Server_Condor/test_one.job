@@ -1,5 +1,5 @@
 Universe              = vanilla
-Executable            = run_delphes_condor.sh
+Executable            = run_delphes_bash_script.sh
 request_cpus          = 1
 request_memory        = 8GB
 request_disk          = 10GB
