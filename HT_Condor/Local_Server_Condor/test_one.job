@@ -1,0 +1,11 @@
+Universe              = vanilla
+Executable            = run_delphes_condor.sh
+request_cpus          = 1
+request_memory        = 8GB
+request_disk          = 10GB
+Log                   = delphes_logs/test_job.log
+Output                = delphes_logs/test_job.out
+Error                 = delphes_logs/test_job.err
+should_transfer_files = NO
+Arguments             = 0
+Queue 1
