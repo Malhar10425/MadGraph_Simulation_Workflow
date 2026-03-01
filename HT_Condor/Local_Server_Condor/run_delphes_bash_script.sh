@@ -1,13 +1,14 @@
+
 #!/bin/bash
 
 # Get the index from command line argument
 INDEX=$1
 
 # Define paths
-DELPHES_DIR="/path_to/MG5_aMC_v3_5_12/Delphes"
-CARD="cards/desired_delphes_card.tcl"
-INPUT_FILE="/path_to_Unzipped_hepmc_files/${INDEX}_pythia8_events.hepmc"
-OUTPUT_DIR="/path_to_delphes_output"
+DELPHES_DIR="/storage/env/Delphes-3.5.0"
+CARD="cards/1modified_delphes_card_CMS_PileUp.tcl"
+INPUT_FILE="/storage/backup_data/pp_thwz_LO_5F_Tune_CP5_pythia8_13_p6_TeV/Unzipped_hepmc_files/${INDEX}_pythia8_events.hepmc"
+OUTPUT_DIR="/storage/backup_data/pp_thwz_LO_5F_Tune_CP5_pythia8_13_p6_TeV/delphes_output"
 OUTPUT_FILE="${OUTPUT_DIR}/${INDEX}_run_01_decayed_1.root"
 
 # Create output directory if it doesn't exist
@@ -63,3 +64,5 @@ fi
 rm -rf "$TEMP_DIR"
 
 echo "Finished at $(date)"
+
+
