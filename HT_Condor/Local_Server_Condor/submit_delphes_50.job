@@ -1,6 +1,6 @@
 # Delphes Condor submission for 50 jobs on 3 nodes
 Universe              = vanilla
-Executable            = run_delphes_condor.sh
+Executable            = pp_thwz_run_delp_condor.sh
 +JobFlavour           = "nextweek"
 # Request resources - adjusted for your node specs
 request_cpus          = 1
@@ -9,9 +9,9 @@ request_disk          = 10GB
 # Requirements - use all available nodes
 Requirements          = (OpSys == "LINUX") && (Arch == "X86_64") && (TARGET.Memory >= 8000)
 # Log files with index in filename
-Log                   = delphes_logs/delphes_job_$(Process).log
-Output                = delphes_logs/delphes_job_$(Process).out
-Error                 = delphes_logs/delphes_job_$(Process).err
+Log                   = thwz_delphes_logs/delphes_job_$(Process).log
+Output                = thwz_delphes_logs/delphes_job_$(Process).out
+Error                 = thwz_delphes_logs/delphes_job_$(Process).err
 # Arguments: pass the index (0-49)
 Arguments             = $(Process)
 # Submit 50 jobs
